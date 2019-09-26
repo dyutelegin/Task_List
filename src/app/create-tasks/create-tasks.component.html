@@ -1,0 +1,21 @@
+<h3>Создание новой задачи</h3>
+<div [hidden]="submitted" style="width: 300px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nametask">Задача</label>
+      <input type="text" class="form-control" id="nametask" required [(ngModel)]="tasks.nametask" name="nametask">
+    </div>
+
+    <div class="form-group">
+      <label for="date">Дата</label>
+      <input type="date" class="form-control" id="date" required [(ngModel)]="tasks.date" name="date">
+    </div>
+
+    <button type="submit" class="btn btn-success">Подтвердить</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>Ваша задача успешно добавлена!</h4>
+  <button class="btn btn-success" (click)="newTasks()">Добавить</button>
+</div>

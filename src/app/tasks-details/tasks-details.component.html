@@ -1,0 +1,12 @@
+<div *ngIf="tasks">
+  <div>
+    <label>Задача: </label> {{tasks.nametask}}
+  </div>
+  <div>
+    <label>Дата: </label> {{tasks.date}}
+  </div>
+
+  <span class="button is-small btn-danger" (click)='deleteTasks()'>Удалить</span>
+
+  <hr/>
+</div>
