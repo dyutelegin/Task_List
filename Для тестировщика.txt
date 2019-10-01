@@ -1,0 +1,12 @@
+1. Скачать Node.js и npm
+2. после скачивания в консоле ввести команды npm install -g @angular/cli
+3. затем ввести команду ng serve.
+4. открыть в браузере страницу localhost:4200
+-----------------------------------------
+5. Создать базу данных в postgresql (у меня todolist3), если хотите другую то можно поменять в файле Task_List/togolist/src/main/resources/application.properties
+строчку spring.datasource.url=jdbc:postgresql://localhost/todolist3 на ту которую создали.
+6. Заходим в папку с главным классом TogolistApplication.java
+7. В комадной строке пишем javac TogolistApplication.java
+8. Затем jar cvf togolist.jar -C src
+9. Запускаем java -classpath src:path/com/todolist/togolist/togolist.jar com.todolist.togolist.TogolistApplication
+10. Тестирум на странице localhost:4200
